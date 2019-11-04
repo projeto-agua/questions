@@ -1,450 +1,460 @@
-<!DOCTYPE html>
-<html>
-  <head>
+    <!DOCTYPE html>
+    <html>
+    <head>
     <title>Projeto Água Recife</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Twitter Bootstrap Wizard Plugin">
-	<meta name="author" content="Vincent Gabriel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twitter Bootstrap Wizard Plugin">
+    <meta name="author" content="Vincent Gabriel">
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<style type="text/css">
-	      body {
-	        padding-top: 60px;
-	        padding-bottom: 40px;
-			background-image: url(bootstrap/img/background-image.jpg);
-	      }
-	      .sidebar-nav {
-	        padding: 9px 0;
-	      }
+    <style type="text/css">
+    body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-image: url(bootstrap/img/background-image.jpg);
+    }
+    .sidebar-nav {
+    padding: 9px 0;
+    }
 
-		  .background_home{
-			background-color: #ffffffa3;
-    		border-radius: 20px;
-		  }
-		  h1{
-			color:#274861;
-		  }
+    .background_home{
+    background-color: #ffffffa3;
+    border-radius: 20px;
+    }
+    h1{
+    color:#274861;
+    }
 
-		  .hero-unit{
-			margin-bottom: 1vw;
-    		border-bottom: solid 1px #66666629;
-		  }
-	    </style>
+    .hero-unit{
+    margin-bottom: 1vw;
+    border-bottom: solid 1px #66666629;
+    }
+    </style>
 
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
-  </head>
-  <body>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>
+    <body>
 
 
     <div class="container background_home">
-      <div class="row-fluid">
-        <div class="col-xs-12">
-          <div class="hero-unit text-center">
-            <h1>QUESTIONÁRIO SOBRE A ÁGUA</h1>
-			<h3>Avaliação Institucional</h3>
-			<p></p>
-          </div>
-          <div class="row-fluid">
-          <div class="row-fluid">
-
-           
-
-
-			<div class="span11">
-			<a name="demo"></a>
-              	<div id="rootwizard">
-					<div class="navbar">
-					  <div class="navbar-inner">
-					    <div class="container">
-					<ul>
-						<li><a href="#tab0" data-toggle="tab">Início</a></li>
-						<li><a href="#tab1" data-toggle="tab">Q1.</a></li>
-						<li><a href="#tab2" data-toggle="tab">Q2.</a></li>
-						<li><a href="#tab3" data-toggle="tab">Q3.</a></li>
-						<li><a href="#tab4" data-toggle="tab">Q4.</a></li>
-						<li><a href="#tab5" data-toggle="tab">Q5.</a></li>
-						<li><a href="#tab6" data-toggle="tab">Q6.</a></li>
-						<li><a href="#tab7" data-toggle="tab">Q7.</a></li>
-						<li><a href="#tab8" data-toggle="tab">Q8.</a></li>
-						<li><a href="#tab9" data-toggle="tab">Q9.</a></li>
-						<li><a href="#tab10" data-toggle="tab">Q10.</a></li>
-						<li><a href="#tab11" data-toggle="tab">Fim</a></li>
-					</ul>
-					 </div>
-					  </div>
-					</div>
-					<div id="bar" class="progress progress-striped active">
-					  <div class="progress-bar"></div>
-					</div>
-					<div class="tab-content">
-						
-						<div class="tab-pane" id="tab0">
-						 
-								<div class="form-group">
-										
-										<label for="exampleInputEmail1">Nome Completo</label>
-										<input type="text" class="form-control" id="name" aria-describedby="Nome Completo" placeholder="Maria josé" required >
-									
-								</div>
-						
-						</div>
-
-					    <div class="tab-pane" id="tab1">
-
-								<label for="">A água é o elemento mais presente na superfície da terra. Você sabe qual a porcentagem de água no chamado planeta azul?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios1">
-								<label class="form-check-label" for="exampleRadios1">
-								a)	A água cobre cerca de 54% da superfície da terra.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios2">
-								<label class="form-check-label" for="exampleRadios2">
-								b)	A água cobre cerca de 63% da superfície da terra.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios3" answer="true">
-								<label class="form-check-label" for="exampleRadios3">
-								c)	A água cobre cerca de 71% da superfície da terra.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios4">
-								<label class="form-check-label" for="exampleRadios4">
-								d)	A água cobre cerca de 91% da superfície da terra.
-								</label>
-								</div>
-
-						</div>
-						
-					    <div class="tab-pane" id="tab2">
-
-								<label for="">Qual o outro nome para chuva que é o retorno para água à terra?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios5">
-								<label class="form-check-label" for="exampleRadios5">
-								a)	Transpiração.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios6">
-								<label class="form-check-label" for="exampleRadios6">
-								b)	Granizo.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios7">
-								<label class="form-check-label" for="exampleRadios7">
-								c)	Condensação.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios8"  answer="true">
-								<label class="form-check-label" for="exampleRadios8">
-								d)	Precipitação.
-								</label>
-								</div>
-						  
-					    </div>
-						<div class="tab-pane" id="tab3">
-
-								<label for="">A água fica parada para que os flocos mais pesados se depositem no fundo. Qual processo de tratamento é utilizado?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios9">
-								<label class="form-check-label" for="exampleRadios9">
-								a)	Filtração.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios10">
-								<label class="form-check-label" for="exampleRadios10">
-								b)	Desinfecção.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios11" answer="true">
-								<label class="form-check-label" for="exampleRadios11">
-								c)	Decantação.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios12">
-								<label class="form-check-label" for="exampleRadios12">
-										d)	Condensação
-								</label>
-								</div>
-
-					    </div>
-						<div class="tab-pane" id="tab4">
-
-								<label for="">De quanto é o desperdício de água no Brasil, da produção aos  domicílios?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios13">
-								<label class="form-check-label" for="exampleRadios13">
-								a)	Mais de 50%.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios14" answer="true">
-								<label class="form-check-label" for="exampleRadios14">
-								b)	40%.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios15">
-								<label class="form-check-label" for="exampleRadios15">
-								c)	30%.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios16">
-								<label class="form-check-label" for="exampleRadios16">
-								d)	20%
-								</label>
-								</div>
-
-					    </div>
-						<div class="tab-pane" id="tab5">
-
-								<label for="">O Brasil é o país mais rico em água doce do planeta?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios17">
-								<label class="form-check-label" for="exampleRadios17">
-								a)	Não, isso é válido para a bacia amazônica que está em vários países da América do Sul.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios18" answer="true">
-								<label class="form-check-label" for="exampleRadios18">
-								b)	Sim o Brasil tem reservas únicas de água doce.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios19">
-								<label class="form-check-label" for="exampleRadios19">
-								c)	Não, o Brasil tem a maior bacia, mas não é o mais rico.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios20">
-								<label class="form-check-label" for="exampleRadios20">
-								d)	Sim, toda riqueza do Brasil vem da água.
-								</label>
-								</div>
-
-					    </div>
-						<div class="tab-pane" id="tab6">
-
-								<label for="">Qual é o consumo médio diário de água por pessoa no mundo?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios21">
-								<label class="form-check-label" for="exampleRadios21">
-								a)	Cerca de 1.000 litros.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios22" >
-								<label class="form-check-label" for="exampleRadios22">
-								b)	Perto dos 100 litros.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios23" answer="true">
-								<label class="form-check-label" for="exampleRadios23">
-								c)	Menos de 50 litros.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios24">
-								<label class="form-check-label" for="exampleRadios24">
-										d)	2 litros, já que é o que devemos beber todo o dia.
-								</label>
-								</div>
-
-					    </div>
-						<div class="tab-pane" id="tab7">
-
-								<label for="">Na produção de alimentos, qual o maior consumo médio de água?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios25">
-								<label class="form-check-label" for="exampleRadios25">
-								a)	Cerca de 1.000 litros.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios26" >
-								<label class="form-check-label" for="exampleRadios26">
-								b)	Perto dos 100 litros.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios27" answer="true">
-								<label class="form-check-label" for="exampleRadios27">
-								c)	Menos de 50 litros.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios28">
-								<label class="form-check-label" for="exampleRadios28">
-										d)	2 litros, já que é o que devemos beber todo o dia.
-								</label>
-								</div>
-
-						</div>
-						<div class="tab-pane" id="tab8">
-
-								<label for="">A pegada hídrica mostra quanto de água você consome. Do total, quanto vem do uso direto, como banho e uso para beber?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios29">
-								<label class="form-check-label" for="exampleRadios29">
-								a)	Mais de 90%.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios30">
-								<label class="form-check-label" for="exampleRadios30">
-								b)	Entre 50% e 90%.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios31">
-								<label class="form-check-label" for="exampleRadios31">
-								c)	De 10% a 50%.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios32" answer="true">
-								<label class="form-check-label" for="exampleRadios32">
-								d)	Menos de 10%.
-								</label>
-								</div>
-
-						</div>
-						<div class="tab-pane" id="tab9">
-
-								<label for="">As três características da água são, exceto:*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios33">
-								<label class="form-check-label" for="exampleRadios33">
-								a)	A água incolor.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios34">
-								<label class="form-check-label" for="exampleRadios34">
-								b)	A água insípida.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios35" answer="true">
-								<label class="form-check-label" for="exampleRadios35">
-								c)	A água é inconsumível.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios36">
-								<label class="form-check-label" for="exampleRadios36">
-								d)	A água é inodoro.
-								</label>
-								</div>
-
-						</div>
-						<div class="tab-pane" id="tab10">
-
-								<label for="">Qual destes produtos têm maior consumo de água na produção?*</label>
-
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios37">
-								<label class="form-check-label" for="exampleRadios37">
-								a)	1 xícara de café.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios38">
-								<label class="form-check-label" for="exampleRadios38">
-								b)	100g de açúcar refinado.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios39" answer="true">
-								<label class="form-check-label" for="exampleRadios39">
-								c)	100g de chocolate.
-								</label>
-								</div>
-								<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios40">
-								<label class="form-check-label" for="exampleRadios40">
-								d)	100g de carne bovina.
-								</label>
-								</div>
-
-						</div>
-						<div class="tab-pane" id="tab11">
-							Parabénss!!!
-						</div>
-						<ul class="pager wizard">
-							<li class="previous first" style="display:none;"><a href="javascript:;">Primeiro</a></li>
-							<li class="previous"><a href="javascript:;">Anterior</a></li>
-							<li class="next last" style="display:none;"><a href="javascript:;">Último</a></li>
-							<li class="next"><a href="javascript:;">Próximo</a></li> 
-						</ul>
-					</div>
-				</div>
-            </div><!--/span-->
-
-          </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
+    <div class="row-fluid">
+    <div class="col-xs-12">
+    <div class="hero-unit text-center">
+    <h1>AONDE DESÁGUA ESSA ÁGUA?</h1>
+    <h3>Avaliação Institucional</h3>
+    <p></p>
+    </div>
+    <div class="row-fluid">
+    <div class="row-fluid">
 
 
 
-      <hr>
 
-      <footer>
-        <p>&copy; <a href='#' target="_blank">Fabio Bernardo</a> 2019</p>
-      </footer>
+    <div class="span11">
+    <a name="demo"></a>
+    <div id="rootwizard">
+    <div class="navbar">
+    <div class="navbar-inner">
+    <div class="container">
+    <ul>
+    <li><a href="#tab0" data-toggle="tab">Início</a></li>
+    <li><a href="#tab1" data-toggle="tab">Q1.</a></li>
+    <li><a href="#tab2" data-toggle="tab">Q2.</a></li>
+    <li><a href="#tab3" data-toggle="tab">Q3.</a></li>
+    <li><a href="#tab4" data-toggle="tab">Q4.</a></li>
+    <li><a href="#tab5" data-toggle="tab">Q5.</a></li>
+    <li><a href="#tab6" data-toggle="tab">Q6.</a></li>
+    <li><a href="#tab7" data-toggle="tab">Q7.</a></li>
+    <li><a href="#tab8" data-toggle="tab">Q8.</a></li>
+    <li><a href="#tab9" data-toggle="tab">Q9.</a></li>
+    <li><a href="#tab10" data-toggle="tab">Q10.</a></li>
+    <li><a href="#tab11" data-toggle="tab">Fim</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div id="bar" class="progress progress-striped active">
+    <div class="progress-bar"></div>
+    </div>
+    <div class="tab-content">
+
+    <div class="tab-pane" id="tab0">
+
+    <div class="form-group">
+
+    <label for="exampleInputEmail1">Clique em próximo para iniciar o teste.</label>
+
+    </div>
+
+    </div>
+
+    <div class="tab-pane" id="tab1">
+
+    <label for="">A água é o elemento mais presente na superfície da terra. Você sabe qual a porcentagem de água no chamado planeta azul?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios1" value="0">
+    <label class="form-check-label" for="exampleRadios1">
+    a)	A água cobre cerca de 54% da superfície da terra.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios2" value="0">
+    <label class="form-check-label" for="exampleRadios2">
+    b)	A água cobre cerca de 63% da superfície da terra.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios3" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios3">
+    c)	A água cobre cerca de 71% da superfície da terra.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios4" value="0">
+    <label class="form-check-label" for="exampleRadios4">
+    d)	A água cobre cerca de 91% da superfície da terra.
+    </label>
+    </div>
+
+    </div>
+
+    <div class="tab-pane" id="tab2">
+
+    <label for="">Qual o outro nome para chuva que é o retorno para água à terra?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios5" value="0">
+    <label class="form-check-label" for="exampleRadios5">
+    a)	Transpiração.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios6" value="0">
+    <label class="form-check-label" for="exampleRadios6">
+    b)	Granizo.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios7" value="0">
+    <label class="form-check-label" for="exampleRadios7">
+    c)	Condensação.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios8"  answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios8">
+    d)	Precipitação.
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab3">
+
+    <label for="">A água fica parada para que os flocos mais pesados se depositem no fundo. Qual processo de tratamento é utilizado?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios9" value="0">
+    <label class="form-check-label" for="exampleRadios9">
+    a)	Filtração.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios10" value="0">
+    <label class="form-check-label" for="exampleRadios10">
+    b)	Desinfecção.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios11" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios11">
+    c)	Decantação.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios12" value="0">
+    <label class="form-check-label" for="exampleRadios12">
+    d)	Condensação
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab4">
+
+    <label for="">De quanto é o desperdício de água no Brasil, da produção aos  domicílios?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios13" value="0">
+    <label class="form-check-label" for="exampleRadios13">
+    a)	Mais de 50%.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios14" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios14">
+    b)	40%.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios15" value="0">
+    <label class="form-check-label" for="exampleRadios15">
+    c)	30%.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios16" value="0">
+    <label class="form-check-label" for="exampleRadios16">
+    d)	20%
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab5">
+
+    <label for="">O Brasil é o país mais rico em água doce do planeta?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios17" value="0">
+    <label class="form-check-label" for="exampleRadios17">
+    a)	Não, isso é válido para a bacia amazônica que está em vários países da América do Sul.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios18" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios18">
+    b)	Sim o Brasil tem reservas únicas de água doce.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios19" value="0">
+    <label class="form-check-label" for="exampleRadios19">
+    c)	Não, o Brasil tem a maior bacia, mas não é o mais rico.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios20" value="0">
+    <label class="form-check-label" for="exampleRadios20">
+    d)	Sim, toda riqueza do Brasil vem da água.
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab6">
+
+    <label for="">Qual é o consumo médio diário de água por pessoa no mundo?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios21" value="0">
+    <label class="form-check-label" for="exampleRadios21">
+    a)	Cerca de 1.000 litros.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios22" value="0">
+    <label class="form-check-label" for="exampleRadios22">
+    b)	Perto dos 100 litros.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios23" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios23">
+    c)	Menos de 50 litros.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios24" value="0">
+    <label class="form-check-label" for="exampleRadios24">
+    d)	2 litros, já que é o que devemos beber todo o dia.
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab7">
+
+    <label for="">Na produção de alimentos, qual o maior consumo médio de água?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios25" value="0">
+    <label class="form-check-label" for="exampleRadios25">
+    a)	Cerca de 1.000 litros.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios26" value="0">
+    <label class="form-check-label" for="exampleRadios26">
+    b)	Perto dos 100 litros.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios27" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios27">
+    c)	Menos de 50 litros.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios28" value="0">
+    <label class="form-check-label" for="exampleRadios28">
+    d)	2 litros, já que é o que devemos beber todo o dia.
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab8">
+
+    <label for="">A pegada hídrica mostra quanto de água você consome. Do total, quanto vem do uso direto, como banho e uso para beber?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios29" value="0">
+    <label class="form-check-label" for="exampleRadios29">
+    a)	Mais de 90%.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios30" value="0">
+    <label class="form-check-label" for="exampleRadios30">
+    b)	Entre 50% e 90%.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios31" value="0">
+    <label class="form-check-label" for="exampleRadios31">
+    c)	De 10% a 50%.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios32" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios32">
+    d)	Menos de 10%.
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab9">
+
+    <label for="">As três características da água são, exceto:*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios33" value="0">
+    <label class="form-check-label" for="exampleRadios33">
+    a)	A água incolor.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios34" value="0">
+    <label class="form-check-label" for="exampleRadios34">
+    b)	A água insípida.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios35" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios35">
+    c)	A água é inconsumível.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios36" value="0">
+    <label class="form-check-label" for="exampleRadios36">
+    d)	A água é inodoro.
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab10">
+
+    <label for="">Qual destes produtos têm maior consumo de água na produção?*</label>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios37" value="0">
+    <label class="form-check-label" for="exampleRadios37">
+    a)	1 xícara de café.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios38" value="0">
+    <label class="form-check-label" for="exampleRadios38">
+    b)	100g de açúcar refinado.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios39" answer="true" value="1">
+    <label class="form-check-label" for="exampleRadios39">
+    c)	100g de chocolate.
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios40" value="0">
+    <label class="form-check-label" for="exampleRadios40">
+    d)	100g de carne bovina.
+    </label>
+    </div>
+
+    </div>
+    <div class="tab-pane" id="tab11">
+    <label class="form-check-label">Nota:</label>
+    </div>
+    <ul class="pager wizard">
+    <li class="previous first" style="display:none;"><a href="javascript:;">Primeiro</a></li>
+    <li class="previous"><a href="javascript:;" >Anterior</a></li>
+    <li class="next last" style="display:none;"><a href="javascript:;">Último</a></li>
+    <li class="next"><a href="javascript:;">Próximo</a></li> 
+    </ul>
+    </div>
+    </div>
+    </div><!--/span-->
+
+    </div><!--/row-->
+    </div><!--/span-->
+    </div><!--/row-->
+
+
+
+    <hr>
+
+    <footer>
+    <p>&copy; <a href='#' target="_blank">Fabio Bernardo</a> 2019</p>
+    </footer>
 
     </div><!--/.fluid-container-->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="jquery.bootstrap.wizard.js"></script>
-	<script>
-	$(document).ready(function() {
-	  		$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
-			var $total = navigation.find('li').length;
-			var $current = index+1;
-			var $percent = ($current/$total) * 100;
-			$('#rootwizard').find('.progress-bar').css({width:$percent+'%'});
-		}});
-	});
+    <script src="jquery.bootstrap.wizard.js"></script>
+    <script>
+    $(document).ready(function() {
+    $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+    var $total = navigation.find('li').length;
+    var $current = index+1;
+    var $percent = ($current/$total) * 100;
+    $('#rootwizard').find('.progress-bar').css({width:$percent+'%'});
 
-	// var answer = 0;
+    }});
+    });
 
-	// $.each($('.tab-content').children(), (key, value) => {
-	// 	$.each($(value).find("div.form-check > input"), (k, v) => {
-	// 			if(v.checked && $(v).attr('true') == "")
-	// 	answer++;
-	// 	});
-	// });
 
-	// console.log(answer);
+    //$("#tab11").html($('.form-check > input[true]:checked').length);
 
-	$("#tab11").html($('.form-check > input[true]:checked').length);
 
-	</script>
-  </body>
-</html>
+    $(document).ready(function() {
+
+    $(".form-check-input").bind("blur change check", function() {
+    total = 0;
+
+    $("input[type='checkbox']:checked,input[type='radio']:checked").each(function() {
+    total+=parseFloat($(this).val());
+    });
+
+
+    $("#tab11").html(total.toFixed(2));
+    });
+
+    });
+
+
+    </script>
+    </body>
+    </html>
+
+
+
