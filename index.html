@@ -454,9 +454,7 @@
                     }
                 });
             });
-            x
-
-
+            
             //$("#tab11").html($('.form-check > input[true]:checked').length);
 
             $(document).ready(function() {
@@ -468,7 +466,7 @@
                         total += parseFloat($(this).val());
                     });
 
-                    $("#tab11").html(total.toFixed(2));
+                    $("#tab11").html("Nota: " + total.toFixed(2));
                 });
 
             });
