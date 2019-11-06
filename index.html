@@ -52,7 +52,7 @@
                 <div class="hero-unit text-center">
                     <h1>AONDE DESÁGUA ESSA ÁGUA?</h1>
                     <h3>Avaliação Institucional</h3>
-                    <p></p>
+                    <p id="nota_do_aluno" >Nota:Preencha todas as questões</p>
                 </div>
                 <div class="row-fluid">
                     <div class="row-fluid">
@@ -67,7 +67,7 @@
                                     <div class="navbar-inner">
                                         <div class="container">
                                             <ul>
-                                                <li><a href="#tab0" data-toggle="tab">Início</a></li>
+                                                <!-- <li><a href="#tab0" data-toggle="tab">Início</a></li> -->
                                                 <li><a href="#tab1" data-toggle="tab">Q1.</a></li>
                                                 <li><a href="#tab2" data-toggle="tab">Q2.</a></li>
                                                 <li><a href="#tab3" data-toggle="tab">Q3.</a></li>
@@ -78,7 +78,7 @@
                                                 <li><a href="#tab8" data-toggle="tab">Q8.</a></li>
                                                 <li><a href="#tab9" data-toggle="tab">Q9.</a></li>
                                                 <li><a href="#tab10" data-toggle="tab">Q10.</a></li>
-                                                <li><a href="#tab11" data-toggle="tab">Fim</a></li>
+                                                <!-- <li><a href="#tab11" data-toggle="tab">Fim</a></li> -->
                                             </ul>
                                         </div>
                                     </div>
@@ -88,7 +88,7 @@
                                 </div>
                                 <div class="tab-content">
 
-                                    <div class="tab-pane" id="tab0">
+                                    <!-- <div class="tab-pane" id="tab0">
 
                                         <div class="form-group">
 
@@ -97,7 +97,7 @@
 
                                         </div>
 
-                                    </div>
+                                    </div> -->
 
                                     <div class="tab-pane" id="tab1">
 
@@ -409,15 +409,14 @@
                                         </div>
 
                                     </div>
-                                    <div class="tab-pane" id="tab11" style="font-size: 3vw; text-align: center;">
+                                    <!-- <div class="tab-pane" id="tab11" style="font-size: 3vw; text-align: center;">
                                         <label class="form-check-label">Preencha todas questões.</label>
-                                    </div>
+                                    </div> -->
 
                                     <ul class="pager wizard">
                                         <li class="previous first" style="display:none;"><a href="javascript:;">Primeiro</a></li>
                                         <li class="previous"><a href="javascript:;">Anterior</a></li>
 										<li class="next last" style="display:none;"><a href="javascript:;">Último</a></li>
-										<li class="next" id="click_respostas" style="display:none;"><a>Revelar respostas</a></li>
                                         <li class="next"><a href="javascript:;">Próximo</a></li>
                                     </ul>
                                 </div>
@@ -467,14 +466,9 @@
                     });
                     if ($("input[type='radio']:checked").length == 10){
                     
-					$("#tab11").html("Nota: " + total.toFixed(2));
+					$("#nota_do_aluno").html("Nota: " + total.toFixed(2));
 					
-					$("#click_respostas").css("display","block !important");
-
-					$( "#click_respostas" ).click(function() {
 					$(".check").addClass("color_label");
-					});
-					
 
                     }else{
                     $("#tab11").html("<label>Preencha todas questões.</label>");   
