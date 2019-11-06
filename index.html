@@ -32,9 +32,9 @@
             border-bottom: solid 1px #66666629;
         }
 
-	.color_label{
-	    color: #008000;
-	}
+		.color_label{
+			color: #006400;
+		}
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -409,15 +409,15 @@
                                         </div>
 
                                     </div>
-                                    <div class="tab-pane" id="tab11">
+                                    <div class="tab-pane" id="tab11" style="font-size: 3vw; text-align: center;">
                                         <label class="form-check-label">Preencha todas questões.</label>
                                     </div>
 
                                     <ul class="pager wizard">
                                         <li class="previous first" style="display:none;"><a href="javascript:;">Primeiro</a></li>
                                         <li class="previous"><a href="javascript:;">Anterior</a></li>
-                                        <li class="next last" style="display:none;"><a href="javascript:;">Último</a>
-                                        </li>
+										<li class="next last" style="display:none;"><a href="javascript:;">Último</a></li>
+										<li class="next" id="click_respostas" style="display:none;"><a>Revelar respostas</a></li>
                                         <li class="next"><a href="javascript:;">Próximo</a></li>
                                     </ul>
                                 </div>
@@ -468,7 +468,13 @@
                     if ($("input[type='radio']:checked").length == 10){
                     
 					$("#tab11").html("Nota: " + total.toFixed(2));
+					
+					$("#click_respostas").css("display","block !important");
+
+					$( "#click_respostas" ).click(function() {
 					$(".check").addClass("color_label");
+					});
+					
 
                     }else{
                     $("#tab11").html("<label>Preencha todas questões.</label>");   
