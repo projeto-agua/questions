@@ -32,9 +32,9 @@
             border-bottom: solid 1px #66666629;
         }
 
-		.color_label{
-			color: #fff;
-		}
+	.color_label{
+	    color: #008000;
+	}
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -118,7 +118,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios01" id="exampleRadios3" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios3">
+                                            <label class="form-check-label check" for="exampleRadios3">
                                                 c) A água cobre cerca de 71% da superfície da terra.
                                             </label>
                                         </div>
@@ -156,7 +156,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios02" id="exampleRadios8" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios8">
+                                            <label class="form-check-label check" for="exampleRadios8">
                                                 d) Precipitação.
                                             </label>
                                         </div>
@@ -181,7 +181,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios03" id="exampleRadios11" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios11">
+                                            <label class="form-check-label check" for="exampleRadios11">
                                                 c) Decantação.
                                             </label>
                                         </div>
@@ -206,7 +206,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios04" id="exampleRadios14" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios14">
+                                            <label class="form-check-label check" for="exampleRadios14">
                                                 b) 40%.
                                             </label>
                                         </div>
@@ -237,7 +237,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios05" id="exampleRadios18" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios18">
+                                            <label class="form-check-label check" for="exampleRadios18">
                                                 b) Sim o Brasil tem reservas únicas de água doce.
                                             </label>
                                         </div>
@@ -274,7 +274,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios06" id="exampleRadios23" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios23">
+                                            <label class="form-check-label check" for="exampleRadios23">
                                                 c) Menos de 50 litros.
                                             </label>
                                         </div>
@@ -305,7 +305,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios07" id="exampleRadios27" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios27">
+                                            <label class="form-check-label check" for="exampleRadios27">
                                                 c) Menos de 50 litros.
                                             </label>
                                         </div>
@@ -342,7 +342,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios08" id="exampleRadios32" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios32">
+                                            <label class="form-check-label check" for="exampleRadios32">
                                                 d) Menos de 10%.
                                             </label>
                                         </div>
@@ -366,7 +366,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios09" id="exampleRadios35" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios35">
+                                            <label class="form-check-label check" for="exampleRadios35">
                                                 c) A água é inconsumível.
                                             </label>
                                         </div>
@@ -397,7 +397,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="exampleRadios010" id="exampleRadios39" answer="true" value="1">
-                                            <label class="form-check-label" for="exampleRadios39">
+                                            <label class="form-check-label check" for="exampleRadios39">
                                                 c) 100g de chocolate.
                                             </label>
                                         </div>
@@ -468,7 +468,7 @@
                     if ($("input[type='radio']:checked").length == 10){
                     
 					$("#tab11").html("Nota: " + total.toFixed(2));
-					$("#exampleRadios3").addClass("color_label");
+					$(".check").addClass("color_label");
 
                     }else{
                     $("#tab11").html("<label>Preencha todas questões.</label>");   
