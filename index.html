@@ -9,11 +9,10 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         body {
-            padding-top: 60px;
-            padding-bottom: 40px;
             background-image: url(bootstrap/img/background-image.jpg);
-			padding-left: 5vw;
-   			padding-right: 5vw;
+			padding-left: 3vw;
+   			padding-right: 3vw;
+			margin: 10% 0;
         }
         
         .sidebar-nav {
@@ -35,18 +34,34 @@
         }
 
 		.color_label{
-			color: #0c9a0c;;
+			color: #0c9a0c !important;
 		}
 
 		p#nota_do_aluno {
 			font-weight: bold;
 			font-size: 20px;
 			text-align: center;
+			animation: 1s pulsar infinite;
+			cursor:pointer;
+			height: 40px;
 		}
 
 		.container{
 			width: 100%;
 		}
+
+        @keyframes pulsar {
+            0%{
+				font-size: 20px;
+            }
+            50%{
+				font-size: 18px;
+            }
+            100%{
+				font-size: 20px;
+            }
+          }
+
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -435,7 +450,7 @@
                             </div>
                         </div>
                         <!--/span-->
-
+						<p id="nota_do_aluno" >Pontuação: ...</p>
                     </div>
                     <!--/row-->
                 </div>
@@ -447,9 +462,8 @@
 
 
             <hr>
-
+			
             <footer>
-				<p id="nota_do_aluno" >Pontuação: ...</p>
                 <p style="text-align: center;">&copy; <a href='#' target="_blank">Fabio Bernardo</a> 2019</p>
             </footer>
 			
@@ -485,6 +499,7 @@
 					$("#nota_do_aluno").html("Pontuação: " + total.toFixed(2));
 					
 					$(".check").addClass("color_label");
+					$(".form-check-label").css("color", "red");
 
                     }else{
                     $("#tab11").html("<label>Preencha todas questões.</label>");   
